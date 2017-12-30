@@ -1,0 +1,339 @@
+
+.wrap {
+    position: relative;
+  }
+  .wrap .nav-bar .navbar-brand {
+    margin-top: 15px;
+  }
+  .wrap .nav-bar .navbar-form {
+    margin-top: 25px;
+  }
+  .wrap .nav-bar .nav {
+    float: right !important;
+  }
+  .wrap .nav-bar .nav .dropdown span.fa,
+  .wrap .nav-bar .nav .dropdown span.caret {
+    margin-right: 10px;
+  }
+  .wrap .nav-bar .nav .dropdown-menu {
+    background: #222;
+    left: auto;
+    width: 200px;
+    right: 0;
+  }
+  .wrap .nav-bar .nav .dropdown-menu > li > a {
+    color: #ddd;
+    padding: 8px;
+  }
+  .wrap .nav-bar .nav .dropdown-menu > li > a:hover {
+    background: #3355ff;
+  }
+  .wrap .side-menu-link {
+    left: 21em;
+  }
+  .wrap .burger {
+    position: relative;
+    width: 35px;
+    height: 30px;
+    left: 10px;
+    top: 5px;
+    z-index: 500000;
+  }
+  .wrap .burger .burger_inside {
+    position: absolute;
+    background-color: #222;
+    width: 30px;
+    height: 5px;
+    left: 2.5px;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+  }
+  .wrap .burger #bgrOne {
+    top: 0;
+  }
+  .wrap .burger #bgrTwo {
+    top: 10px;
+  }
+  .wrap .burger #bgrThree {
+    top: 20px;
+  }
+  .wrap #side-menu {
+    position: absolute;
+    z-index: -1;
+    background: #404040;
+    width: 22em;
+    padding-top: 20px;
+    padding-right: 23px;
+    padding-left: 10px;
+    float: left;
+    display: block;
+    left: 0;
+    height: 900px;
+  }
+  .wrap .content {
+    position: absolute;
+    right: 0;
+    min-width: 400px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  .wrap .content .top-bar {
+    height: 40px;
+    background: #ddd;
+  }
+  .wrap .content .content-inner {
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    padding-left: 20px;
+    display: block;
+    position: absolute;
+    height: 900px;
+    width: 100%;
+  }
+  .wrap ul.accordion {
+    width: 100%;
+    background: transparent;
+  }
+  .wrap ul.accordion .link {
+    cursor: pointer;
+    display: block;
+    padding: 15px 15px 15px 42px;
+    color: #9D9D9D;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid #303030;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  .wrap ul.accordion li:not(open) last-child .link {
+    border-bottom: 0;
+  }
+  .wrap ul.accordion li i {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    font-size: 18px;
+    color: #999;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  .wrap ul.accordion li i.fa-chevron-down {
+    right: 12px;
+    left: auto;
+    font-size: 16px;
+  }
+  .wrap ul.accordion li.open .link {
+    color: #FFB266;
+  }
+  .wrap ul.accordion li.open i {
+    color: #FFB266;
+  }
+  .wrap ul.accordion li.open i.fa-chevron-down {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  .wrap ul.accordion ul.submenu {
+    display: none;
+    background: transparent;
+    font-size: 14px;
+    padding: 0;
+  }
+  .wrap ul.accordion ul.submenu li {
+    border-bottom: 1px solid #4b4a5e;
+    list-style: none;
+  }
+  .wrap ul.accordion ul.submenu li a {
+    display: block;
+    text-decoration: none;
+    color: #d9d9d9;
+    padding: 12px;
+    padding-left: 42px;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+  }
+  .wrap ul.accordion ul.submenu li a:hover {
+    background: rgba(240, 128, 128, 0.8);
+    color: #ffb266;
+  }
+
+  .ThongTinCaNhan{
+    border: 1px solid #9D9D9D;
+    height: 450px;
+    margin: 40px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .ThongTinCaNhan{
+      height: 470px;
+    }
+
+    .wrap .nav-bar .navbar-brand {
+      margin-top: 0;
+      padding-left: 0;
+    }
+    .wrap .side-menu-link {
+      display: inline-block;
+    }
+    .wrap #side-menu #qform {
+      position: absolute;
+      top: 10px;
+    }
+    .wrap .content {
+      left: 0;
+    }
+    .wrap.active .content {
+      left: 21em;
+    }
+    .wrap.active .content #bgrOne {
+      top: 10px;
+      transform: rotate(225deg);
+    }
+    .wrap.active .content #bgrTwo {
+      opacity: 0;
+    }
+    .wrap.active .content #bgrThree {
+      top: 10px;
+      transform: rotate(315deg);
+    }
+  }
+  @media screen and (min-width: 769px) {
+    .side-menu-link {
+      display: none;
+    }
+    .wrap {
+      position: relative;
+    }
+    .wrap .content {
+      left: 21em;
+      right: 0;
+    }
+  }
+  .highlight{
+    color: #e8491d;
+  }
+  .wrap nav a{
+    padding-left: 35px;
+  }
+  .navbar-inverse .navbar-brand {
+    color: #FFFFFF;
+    font-size: 20px;
+  }
+  
+  /* USER PROFILE PAGE */
+  .card {
+    margin-top: 20px;
+    padding: 30px;
+    background-color: rgba(214, 224, 226, 0.2);
+    -webkit-border-top-left-radius:5px;
+    -moz-border-top-left-radius:5px;
+    border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-top-right-radius:5px;
+    border-top-right-radius:5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .card.hovercard {
+    margin-bottom: 30px;
+    position: relative;
+    padding-top: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .card.hovercard .card-background {
+    height: 130px;
+  }
+  .card-background img {
+    -webkit-filter: blur(25px);
+    -moz-filter: blur(25px);
+    -o-filter: blur(25px);
+    -ms-filter: blur(25px);
+    filter: blur(25px);
+    margin-left: -100px;
+    margin-top: -200px;
+    min-width: 130%;
+  }
+  .card.hovercard .useravatar {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+  }
+  .card.hovercard .useravatar img {
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+  }
+  .card.hovercard .card-info {
+    position: absolute;
+    bottom: 14px;
+    left: 0;
+    right: 0;
+  }
+  .card.hovercard .card-info .card-title {
+    padding:0 5px;
+    font-size: 20px;
+    line-height: 1;
+    color: #262626;
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+  }
+  .card.hovercard .card-info {
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 20px;
+    color: #737373;
+    text-overflow: ellipsis;
+  }
+  .card.hovercard .bottom {
+    padding: 0 20px;
+    margin-bottom: 17px;
+  }
+  
+  .link a{
+    color: #999;
+  }
+  .link a:hover , a:selection, a:active{
+    text-decoration: none;
+  }
+  .link a:visited{
+    text-decoration: none;
+  }
+  .link a:active{
+    text-decoration: none;
+  }
+  .link a:selection{
+    text-decoration: none;
+  }
+
+  .DongHo{
+    height: 4vw;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    border-radius: 4px;
+    color: #FFB266;
+  }
